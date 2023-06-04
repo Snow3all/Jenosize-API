@@ -1,6 +1,6 @@
-const axios = require('axios');
+const axios = require("axios");
 
-exports.searchPlace = async(req, res) => {
+exports.searchPlace = async (req, res) => {
   try {
     const { restaurantName, provide } = req.body;
     const { data } = await axios.get(
@@ -12,4 +12,4 @@ exports.searchPlace = async(req, res) => {
   } catch (err) {
     console.log("err: ", err);
   }
-}
+};
